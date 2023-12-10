@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KW_Xamarin.Views.SuscripcionPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label TextColor="Black" FontAttributes="Bold" Text="Chatbot" FontSize="35" HorizontalOptions="Center" Margin="0,20,0,0"/>
+            <Frame VerticalOptions="FillAndExpand">
+                <ScrollView>
+                <StackLayout>
+                    <Frame>
+                        <StackLayout>
+                            <Label FontSize="30" FontAttributes="Bold" TextColor="Black" Text="Estandar" HorizontalOptions="Center"/>
+                                <Grid>
+                                    <!-- Imagen -->
+                                    <Image Source="https://images.unsplash.com/photo-1556911220-e15b29be8c8f" WidthRequest="230"/>
+
+                                    <!-- Contenedor del Texto -->
+                                    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="10">
+                                        <!-- Texto -->
+                                        <Label Opacity=".7" BackgroundColor="Black" Text="$49 x mes" TextColor="White" FontSize="30"  FontAttributes="Bold" />
+                                    </StackLayout>
+                                </Grid>
+                                <Label TextColor="Black" Text="Acceso a nuestro catálogo de recetas que puedes cocinar tu día a día.."/>
+                                <Button BackgroundColor="Black" CornerRadius="20" Text="Suscribirse"
+                                        x:Name="btnSuscripcionEstandar"
+                                    Clicked="btnSuscripcionPre_Clicked"/>
+                        </StackLayout>
+                    </Frame>
+                        <Frame>
+                            <StackLayout>
+                                <Label FontSize="30" FontAttributes="Bold" TextColor="Black" Text="Premium" HorizontalOptions="Center"/>
+                                <Grid>
+                                    <!-- Imagen -->
+                                    <Image Source="https://images.unsplash.com/photo-1556911220-e15b29be8c8f" WidthRequest="230"/>
+
+                                    <!-- Contenedor del Texto -->
+                                    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="10">
+                                        <!-- Texto -->
+                                        <Label Opacity=".7" BackgroundColor="Black" Text="$99 x mes" TextColor="White" FontSize="30"  FontAttributes="Bold" />
+                                    </StackLayout>
+                                </Grid>
+                                <Label TextColor="Black" Text="Acceso a nuestro catálogo de recetas y chatbot IA que te instruira."/>
+                                <Button BackgroundColor="Black" CornerRadius="20" Text="Suscribirse"
+                                    x:Name="btnSuscripcionPremium"
+                                    Clicked="btnSuscripcionPre_Clicked"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

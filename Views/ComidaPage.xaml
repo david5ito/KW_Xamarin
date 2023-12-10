@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KW_Xamarin.Views.ComidaPage">
+        
+
+    <!-- Página de Ingredientes -->
+    <ContentPage Title="Ingredientes">
+
+        <ScrollView>
+            <StackLayout>
+            <Image Source="https://i.pinimg.com/564x/73/35/34/73353454e5844ea81ce617517931f1c4.jpg" Aspect="AspectFill" HeightRequest="200" />
+            <Label FontAttributes="Bold" Padding="10" TextColor="Black" Text="Ingredientes" FontSize="Title" />
+                <ListView>
+                    <ListView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>* 500g de harina de trigo</x:String>
+                            <x:String>* 200g de frijoles</x:String>
+                            <x:String>* 100g de chorizo</x:String>
+                            <!-- Agrega más ingredientes aquí -->
+                        </x:Array>
+                    </ListView.ItemsSource>
+                </ListView>
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage>
+
+    <!-- Página de Preparación -->
+    <ContentPage Title="Preparación">
+        <StackLayout>
+            <Image Source="https://i.pinimg.com/564x/73/35/34/73353454e5844ea81ce617517931f1c4.jpg" Aspect="AspectFill" HeightRequest="200" />
+            <Label FontAttributes="Bold" Padding="10" TextColor="Black" Text="Metodo de preparacion" FontSize="Title" />
+            <ListView>
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>1. Mezclar la harina de trigo con los frijoles.</x:String>
+                        <x:String>2. Cocinar el chorizo y añadirlo a la mezcla.</x:String>
+                        <x:String>3. Formar las tortillas y cocinar los tacos.</x:String>
+                        <!-- Agrega más pasos de preparación aquí -->
+                    </x:Array>
+                </ListView.ItemsSource>
+            </ListView>
+        </StackLayout>
+    </ContentPage>
+
+    <!-- Página de Comentarios -->
+    <ContentPage Title="Comentarios">
+        <StackLayout>
+            <Image Source="https://i.pinimg.com/564x/73/35/34/73353454e5844ea81ce617517931f1c4.jpg" Aspect="AspectFill" HeightRequest="200" />
+            <Label FontAttributes="Bold" Padding="10" TextColor="Black" Text="Comentarios" FontSize="Title" />
+            <ListView>
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>- ¡Este platillo es delicioso! Lo preparé ayer y a mi familia le encantó.</x:String>
+                        <x:String>- Definitivamente lo volveré a cocinar. Gracias por compartir la receta.</x:String>
+                        <!-- Agrega más comentarios aquí -->
+                    </x:Array>
+                </ListView.ItemsSource>
+            </ListView>
+            <!-- Input de Comentarios -->
+
+            <StackLayout>
+                <Frame BorderColor="Gray"
+                       CornerRadius="30"
+                       HasShadow="False"
+                       Padding="5"
+                       Margin="15">
+                    <StackLayout Orientation="Horizontal">
+                        <Entry Placeholder="Escribe tu comentario aqui" TextColor="Black" PlaceholderColor="Gray"/>
+                        
+                        <ImageButton Margin="0,5" HorizontalOptions="EndAndExpand" Aspect="AspectFill" WidthRequest="35" Source="enviar.png"/>
+                    </StackLayout>
+                    
+                </Frame>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage>
+
+
+
+</TabbedPage>

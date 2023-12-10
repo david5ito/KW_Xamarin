@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KW_Xamarin.Views.ChatbotPage"
+             NavigationPage.HasNavigationBar="False"
+             Title="{Binding Title}">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label TextColor="Black" FontAttributes="Bold" Text=" Chatbot" FontSize="35" HorizontalOptions="Center" Margin="0,20,0,0"/>
+            <Frame VerticalOptions="FillAndExpand">
+                <StackLayout>
+                    <Frame  HasShadow="False">
+                        <StackLayout Orientation="Horizontal">
+                            
+                            <Frame BorderColor="Gray"
+                               CornerRadius="30"
+                               HasShadow="False"
+                               Padding="5">
+                                
+                                <Entry PlaceholderColor="Gray" TextColor="Black" Placeholder="Buscar palabra en el chat..."></Entry>
+                            </Frame>
+
+                            <ImageButton Margin="0,5" HorizontalOptions="EndAndExpand" Aspect="AspectFill" WidthRequest="35" Source="lupa.png"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame VerticalOptions="FillAndExpand" BackgroundColor="LightGray">
+                        <StackLayout>
+                            <Label HorizontalOptions="Center" TextColor="Black" Text="hola"/>
+                        </StackLayout>
+                    </Frame>
+                    
+                    
+
+                    <Grid BackgroundColor="Black">
+                        <Frame BorderColor="Gray"
+                       CornerRadius="30"
+                       HasShadow="False"
+                       Padding="5"
+                       Margin="15">
+                            <StackLayout Orientation="Horizontal">
+                                <Entry Placeholder="Escribe tu mensaje aqui..." TextColor="Black" PlaceholderColor="Gray"/>
+
+                                <ImageButton Margin="0,5" HorizontalOptions="EndAndExpand" Aspect="AspectFill" WidthRequest="35" Source="enviar.png"/>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                    
+                    
+
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

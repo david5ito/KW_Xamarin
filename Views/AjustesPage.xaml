@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KW_Xamarin.Views.AjustesPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ajustes" TextColor="Black" FontAttributes="Bold" FontSize="35" HorizontalOptions="Center" Margin="0,20,0,0"/>
+            <Frame VerticalOptions="FillAndExpand">
+                <StackLayout VerticalOptions="Center" Spacing="20">
+                    <Button Text="Cambiar Password" CornerRadius="30" BackgroundColor="#A7F8A7" TextColor="Black"/>
+                    <Button Text="Cambiar Suscripcion" CornerRadius="30" BackgroundColor="#A7F8A7"  TextColor="Black"/>
+
+                    <Button Text="Cerrar Sesion" CornerRadius="10" Margin="0,100,0,0" BackgroundColor="Black"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

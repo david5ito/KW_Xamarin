@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KW_Xamarin.Views.InicioPage">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Inicio" FontSize="35" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,20,0,0"/>
+            <Frame VerticalOptions="FillAndExpand">
+                <StackLayout>
+                    <Image Source="https://images.unsplash.com/photo-1556911220-e15b29be8c8f" />
+
+                    <Label Text="Kitchen Whiz"
+                       Margin="0,15"
+                        HorizontalOptions="CenterAndExpand"
+                           TextColor="Black" FontSize="35" FontAttributes="Bold"
+                           />
+                    <Label TextColor="Black" HorizontalOptions="Center"
+                        Text="Bienvenido a la documentación de desarrollo de KitchenWhiz, tu compañero virtual en el mundo culinario. KitchenWhiz es un chatbot diseñado para brindar a los amantes de la cocina una experiencia interactiva y enriquecedora al proporcionar recetas, instrucciones paso a paso, sugerencias personalizadas y mucho más. Esta documentación te guiará a través de los conceptos, procesos y pasos necesarios para crear y desplegar exitosamente KitchenWhiz."/>
+                    <Button Margin="0,25" CornerRadius="20" BackgroundColor="Black" 
+                            Clicked="btnSuscripciopn_Clicked"
+                            Text="Suscribirse" TextTransform="None"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

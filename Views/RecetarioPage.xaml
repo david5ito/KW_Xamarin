@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KW_Xamarin.Views.RecetarioPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Recetario" FontSize="35" TextColor="Black" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0,20,0,0"/>
+
+            <Frame VerticalOptions="FillAndExpand">
+                <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
+                    <Grid>
+                        <ImageButton Source="https://i.pinimg.com/564x/9f/0e/c0/9f0ec05ab0b33c8e580e2963d9c23d77.jpg"
+                         Aspect="AspectFill"
+                         Clicked="btnReceta_Clicked"  Grid.Row="0" Grid.Column="0"/>
+                        <Label Text="Desayuno"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="White"
+                   FontSize="16" />
+                    </Grid>
+
+                    <Grid Grid.Row="0" Grid.Column="1">
+                        <ImageButton Source="https://i.pinimg.com/564x/73/35/34/73353454e5844ea81ce617517931f1c4.jpg"
+                         Aspect="AspectFill"
+                         Clicked="btnReceta_Clicked"/>
+                        <Label Text="Almuerzo"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="White"
+                   FontSize="16" />
+                    </Grid>
+
+                    <Grid Grid.Row="1" Grid.Column="0">
+                        <ImageButton Source="https://i.pinimg.com/564x/a3/38/d0/a338d02b260a5f4ec98a4108e4dc19e8.jpg"
+                         Aspect="AspectFill"
+                         Clicked="btnReceta_Clicked"/>
+                        <Label Text="Comida"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="White"
+                   FontSize="16" />
+                    </Grid>
+
+                    <Grid Grid.Row="1" Grid.Column="1">
+                        <ImageButton Source="https://i.pinimg.com/564x/9e/2f/5d/9e2f5d609cc0d0c9fac0a9fc5af9076b.jpg"
+                         Aspect="AspectFill"
+                         Clicked="btnReceta_Clicked"/>
+                        <Label Text="Cena"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="White"
+                   FontSize="16" />
+                    </Grid>
+                </Grid>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
